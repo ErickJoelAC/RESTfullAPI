@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vehiculo extends Model
 {
-	protected $table = 'vehiculo';
+	protected $table = 'vehiculos';
 
 	protected $primaryKey = 'serie';
 
@@ -12,6 +12,6 @@ class Vehiculo extends Model
 
 	public function fabricante()
 	{
-		this->belongsTo('Fabricante');
+		$this->belongsTo('Fabricante');
 	}
 }
